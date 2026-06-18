@@ -7,14 +7,15 @@ const container = document.getElementById('stepContainer');
 const progressBar = document.getElementById('progressBar');
 
 gsap.to(container, {
-  x: -window.innerWidth,
+  x: () => -(container.scrollWidth - window.innerWidth),
   ease: 'none',
   scrollTrigger: {
     trigger: container,
     start: 'top top',
-    end: 'bottom top',
+    end: () => `+=${container.scrollWidth - window.innerWidth}`,
     scrub: 1,
-    pin: true
+    pin: true,
+    anticipatePin: 1
   }
 });
 
