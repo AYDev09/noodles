@@ -1,0 +1,31 @@
+{
+  "name": "noodles",
+  "version": "1.0.0",
+  "description": "noodles ysws",
+  "homepage": "https://github.com/AYDev09/noodles#readme",
+  "bugs": {
+    "url": "https://github.com/AYDev09/noodles/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AYDev09/noodles.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.1",
+    "gsap": "^3.15.0",
+    "tailwindcss": "^4.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "vite": "^5.0.0"
+  }
+}

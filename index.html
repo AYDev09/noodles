@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Recipe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .step-container {
+        display: flex;
+      }
+      .step {
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        flex-shrink: 0;
+      }
+      .progress-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        background: linear-gradient(to right, #f97316, #fb923c);
+        width: 0%;
+        z-index: 50;
+      }
+    </style>
+</head>
+<body class="bg-white">
+    <h1 class="text-3xl font-bold text-center my-8">Please scroll </h1>
+    <div class="step-container" id="stepContainer">
+        <section class="step" id="step1">
+            <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-semibold text-orange-600" id="title1">Step 1: Gather Ingredients</h2>
+                    <p class="mt-4 text-lg text-gray-700">Collect all necessary ingredients for making pizza.</p>
+                    <ul class="mt-6 text-gray-600 space-y-2">
+                        <li>• 500g flour</li>
+                        <li>• 300ml water</li>
+                        <li>• 10g salt</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 w-full">
+                    <p class="mb-4 text-sm text-gray-500 italic">tip: Make sure to measure ingredients accurately for the best results.</p>
+                    <img id="img1" src="./assets/1.png" alt="Step 1" class="w-full h-64 md:h-96 rounded-lg shadow-lg object-cover cursor-zoom-in zoomable" />
+                </div>
+            </div>
+        </section>
+
+        <section class="step" id="step2">
+            <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-semibold text-orange-600" id="title2">Step 2: Mix Dough</h2>
+                    <p class="mt-4 text-lg text-gray-700">Mix all ingredients together until combined.</p>
+                    <ul class="mt-6 text-gray-600 space-y-2">
+                        <li>• Pour water</li>
+                        <li>• Add flour</li>
+                        <li>• Mix well</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 w-full">
+                    <p class="mb-4 text-sm text-gray-500 italic">tip: Keep the dough covered while rising to retain moisture.</p>
+                    <img id="img2" src="./assets/2.webp" alt="Step 2" class="w-full h-64 md:h-96 rounded-lg shadow-lg object-cover cursor-zoom-in zoomable" />
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="progress-bar" id="progressBar"></div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
