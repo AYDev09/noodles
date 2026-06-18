@@ -6,17 +6,25 @@ gsap.registerPlugin(ScrollTrigger);
 const container = document.getElementById('stepContainer');
 const progressBar = document.getElementById('progressBar');
 
+const getSlideCount = () => gsap.utils.toArray('.step').length;
+const getScrollDistance = () => window.innerWidth * (getSlideCount() - 1);
+
 gsap.to(container, {
-  x: () => -(container.scrollWidth - window.innerWidth),
+  x: () => -getScrollDistance(),
   ease: 'none',
   scrollTrigger: {
     trigger: container,
     start: 'top top',
-    end: () => `+=${container.scrollWidth - window.innerWidth}`,
+    end: () => `+=${getScrollDistance()}`,
     scrub: 1,
     pin: true,
-    anticipatePin: 1
+    anticipatePin: 1,
+    invalidateOnRefresh: true
   }
+});
+
+window.addEventListener('resize', () => {
+  ScrollTrigger.refresh();
 });
 
 window.addEventListener('scroll', () => {
