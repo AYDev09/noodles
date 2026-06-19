@@ -11,10 +11,10 @@ index.js is the file that contians and controls the basic level animations. i ha
 
 style.css this file loads the tailwind and has any custom/extra css, those custom styles include e.g, the heart imggea sizing or some layout changes.
 
-package.json contains the dependencies such as Gsap and tailwind cssas well as scripts.
+dependencies: Gsap and tailwind csas
 
 ## aiusage
-This site does not contain ai usage for mattersbincluding logic, the basic but my personal design, the creativity etc. Additionally, i would like to add on that cooking tips and comments to increase intrest and reduce monotiny i used comments which also do not contain artifical intellegence. Moreover, one of my fav parts, the pizza heart was created by me from graphic dessign(despite it being minimal it was authentically amde without dependance on ai). Furthermore this read me is exclusively made without artifical intellegance usage (pls ignore the typos ^^), the last slide including my little comment was also exclusive! however... despite my best efforts to limit the use of ai as much as possible, as a beginner i had to take help in certain cases such as in debugging certain code, and since gsap is new for me, in some complex gsap animation parts i had to involve ai.
+This site does not contain ai usage for images or content. AI was used to debug and help come up with ideas. Additionally, i would like to add on that cooking tips and comments to increase intrest and reduce monotiny i used comments which also do not contain artifical intellegence. Moreover, one of my fav parts, the pizza heart was created by me from graphic dessign(despite it being minimal it was authentically made without dependance on ai). Furthermore this read me is exclusively made without artifical intellegance usage (pls ignore the typos ^^), the last slide including my little comment was also exclusive! however... despite my best efforts to limit the use of ai as much as possible, as a beginner i had to take help in certain cases such as in debugging certain code, and since gsap is new for me, in some complex gsap animation parts i had to involve ai though I believe the site is still uniquely mine and it meets hackclubs requirements....(hopefully)
 
 
 

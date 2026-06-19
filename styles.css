@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
+
+ body {overflow-x: hidden;}
+.step-container {
+   display: flex;
+ }
+.step {
+   width: 100vw;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   flex-shrink: 0;
+      }
+.progress-bar {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   height: 4px;
+   background: linear-gradient(to right, #ff69b4, #ffb6c1);
+   width: 0%;
+   z-index: 50;
+}
+
+
 #step0 {
   background:(135deg, #d1cbd1 0%, #fda085 100%);
 

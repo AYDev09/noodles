@@ -55,19 +55,19 @@ document.addEventListener('click', (e) => {
 const audio = document.getElementById('bg-audio');
 const toggleBtn = document.getElementById('toggleAudio');
 
-toggleBtn.textContent = '🎵 Play Music';
+toggleBtn.textContent = 'Play Music';
 
 toggleBtn.addEventListener('click', () => {
   if (audio.paused) {
     audio.play()
       .then(() => {
-        toggleBtn.textContent = '⏸️ Pause Music';
+        toggleBtn.textContent = 'Pause Music';
       })
       .catch(error => {
-        console.error("Playback failed:", error);
+        console.error("Playback failed:", error); // for debuging , God you have no idea how much this bugged me and all it took to fix was to add a /
       });
   } else {
     audio.pause();
-    toggleBtn.textContent = '🎵 Play Music';
+    toggleBtn.textContent = 'Play Music';
   }
 });

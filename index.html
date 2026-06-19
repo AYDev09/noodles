@@ -5,42 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Recipe</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      body {
-        overflow-x: hidden;
-      }
-      .step-container {
-        display: flex;
-      }
-      .step {
-        width: 100vw;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-        flex-shrink: 0;
-      }
-      .progress-bar {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        height: 4px;
-        background: linear-gradient(to right, #ff69b4, #ffb6c1);
-        width: 0%;
-        z-index: 50;
-      }
-            /* Heart-shaped image mask for step 1 */
-            .heart {
-                -webkit-clip-path: path('M50 15 C35 0 0 25 50 75 C100 25 65 0 50 15 Z');
-                clip-path: path('M50 15 C35 0 0 25 50 75 C100 25 65 0 50 15 Z');
-                object-fit: cover;
-                display: block;
-                width: min(80vw, 900px);
-                height: min(80vw, 900px);
-                margin: 0 auto;
-            }
-    </style>
 </head>
 <body class="bg-white">
 
