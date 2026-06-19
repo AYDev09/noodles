@@ -51,3 +51,20 @@ document.addEventListener('click', (e) => {
     if (e.key === 'Escape') remove();
   }, { once: true });
 });
+
+const audio= document.getElementbyId(bg-audio);
+const toggleBtn= document.getElementById('toggleAudio');
+togg;eBtn.textContent =  toggleBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play()
+                    .then(() => {
+                        toggleBtn.textContent = '⏸️ Pause Music';
+                    })
+                    .catch(error => {
+                        console.error("Playback failed:", error);
+                    });
+            } else {
+                audio.pause();
+                toggleBtn.textContent = '🎵 Play Music';
+            }
+        });
