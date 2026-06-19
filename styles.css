@@ -1,2 +1,21 @@
 @import "tailwindcss";
 
+#step0 {
+  background:(135deg, #d1cbd1 0%, #fda085 100%);
+
+}
+
+/*
+.audio-btn {
+   position: fixed;
+   bottom: 20ox;
+   right: 20px;
+   padding: 10px 20px;
+   background-color: #333;
+   color: #fff;
+   border; none;
+   border-radius: 5px;
+   cursor: pointer:
+   z-index 1000;
+}
+   */

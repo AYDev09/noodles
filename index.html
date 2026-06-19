@@ -26,31 +26,63 @@
         bottom: 0;
         left: 0;
         height: 4px;
-        background: linear-gradient(to right, #f97316, #fb923c);
+        background: linear-gradient(to right, #ff69b4, #ffb6c1);
         width: 0%;
         z-index: 50;
       }
+            /* Heart-shaped image mask for step 1 */
+            .heart {
+                -webkit-clip-path: path('M50 15 C35 0 0 25 50 75 C100 25 65 0 50 15 Z');
+                clip-path: path('M50 15 C35 0 0 25 50 75 C100 25 65 0 50 15 Z');
+                object-fit: cover;
+                display: block;
+                width: min(80vw, 900px);
+                height: min(80vw, 900px);
+                margin: 0 auto;
+            }
     </style>
 </head>
 <body class="bg-white">
-    <h1 class="text-3xl font-bold text-center my-8">Please scroll </h1>
+
+    
+    <h1 class="text-3xl font-bold text-center text-pink-600 my-8">Please scroll </h1>
+
+      <section class="step" id="step0">
+            <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-semibold text-pink-600" id="title1">Step 0: Introduction into the whimsical world of pizza making!!</h2>
+                    <p class="mt-4 text-lg text-purple-600">Collect all necessary ingredients for making pizza.</p>
+                    <ul class="mt-6 text-purple-600 space-y-2">
+                        <li>• 550g all poupuse flour</li>
+                        <li>• 320ml of water</li>
+                        <li>• 10g salt(a pinch or so works)</li>
+                        <li>• a packet of active dry yeast</li>
+                        <li>• one tablespoon granulated sugar or honey (to activate the yeast)</li>
+                    </ul>
+                </div>
+                <div class="md:w-2/3 w-full">
+                    <p class="mb-4 text-sm text-purple-600 italic">tip: fresher ingredients will lead to better flavour profile (dw stuff from the pantry also works ;p).</p>
+                    <img id="img1" src="./assets/heart.png" alt="Step 0" class="" style="aspect-ratio:1/1;" />
+                </div>
+            </div>
+        </section>
+
     <div class="step-container" id="stepContainer">
         <section class="step" id="step1">
             <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-1/2">
-                    <h2 class="text-4xl font-semibold text-orange-600" id="title1">Step 1: Gather Ingredients</h2>
-                    <p class="mt-4 text-lg text-gray-700">Collect all necessary ingredients for making pizza.</p>
-                    <ul class="mt-6 text-gray-600 space-y-2">
+                    <h2 class="text-4xl font-semibold text-pink-600" id="title1">Step 1: Gather Ingredients</h2>
+                    <p class="mt-4 text-lg text-purple-600">Collect all necessary ingredients for making pizza.</p>
+                    <ul class="mt-6 text-purple-600 space-y-2">
                         <li>• 550g all poupuse flour</li>
                         <li>• 320ml of water</li>
-                        <li>• 10g salt(a pinch or so works)
-                            <li> .a packet of active dry yeast</li>
-                            
-                        </li>
+                        <li>• 10g salt(a pinch or so works)</li>
+                        <li>• a packet of active dry yeast</li>
+                        <li>• one tablespoon granulated sugar or honey (to activate the yeast)</li>
                     </ul>
                 </div>
                 <div class="md:w-1/2 w-full">
-                    <p class="mb-4 text-sm text-gray-500 italic">tip: fresher ingredients will lead to better flavour profile (dw stuff from the pantry also works ;p).</p>
+                    <p class="mb-4 text-sm text-purple-600 italic">tip: fresher ingredients will lead to better flavour profile (dw stuff from the pantry also works ;p).</p>
                     <img id="img1" src="./assets/4.jpg" alt="Step 1" class="w-full h-64 md:h-96 rounded-lg shadow-lg object-cover cursor-zoom-in zoomable" />
                 </div>
             </div>
@@ -59,16 +91,16 @@
         <section class="step" id="step2">
             <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-1/2">
-                    <h2 class="text-4xl font-semibold text-orange-600" id="title2">Step 2:  Combine to create Dough</h2>
-                    <p class="mt-4 text-lg text-gray-700">Mix all ingredients together until combined and form dough balls.</p>
-                    <ul class="mt-6 text-gray-600 space-y-2">
+                    <h2 class="text-4xl font-semibold text-pink-600" id="title2">Step 2:  Combine to create Dough</h2>
+                    <p class="mt-4 text-lg text-purple-600">Mix all ingredients together until combined and form dough balls.</p>
+                    <ul class="mt-6 text-purple-600 space-y-2">
                         <li>• Pour water</li>
                         <li>• Add all previously mentioned dry ingredients </li>
                         <li>• Mix well</li>
                     </ul>
                 </div>
                 <div class="md:w-1/2 w-full">
-                    <p class="mb-4 text-sm text-gray-500 italic">tip: let the dough rest and rise at room temperature for the perfect pizza!.</p>
+                    <p class="mb-4 text-sm text-purple-600 italic">tip: let the dough rest and rise at room temperature for the perfect pizza!.</p>
                     <img id="img2" src="./assets/2.webp" alt="Step 2" class="w-full h-64 md:h-96 rounded-lg shadow-lg object-cover cursor-zoom-in zoomable" />
                 </div>
             </div>
@@ -77,16 +109,16 @@
         <section class="step" id="step3">
             <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-1/2">
-                    <h2 class="text-4xl font-semibold text-orange-600" id="title3">Step 3: Shape the Dough</h2>
-                    <p class="mt-4 text-lg text-gray-700">Flattening the dough ball.</p>
-                    <ul class="mt-6 text-gray-600 space-y-2">
+                    <h2 class="text-4xl font-semibold text-pink-600" id="title3">Step 3: Shape the Dough</h2>
+                    <p class="mt-4 text-lg text-purple-600">Flattening the dough ball.</p>
+                    <ul class="mt-6 text-purple-600 space-y-2">
                         <li>• roll out the dough</li>
                         <li>• use your hands, gravity, or a rolling pin to stretch it</li>
                         <li>• you may add a rim for crust depending on your preference</li>
                     </ul>
                 </div>
                 <div class="md:w-1/2 w-full">
-                    <p class="mb-4 text-sm text-gray-500 italic">tip: the dough can be shaped into various shapes for a pop of whimsy (e.g. a cute heart or star).</p>
+                    <p class="mb-4 text-sm text-purple-600 italic">tip: the dough can be shaped into various shapes for a pop of whimsy (e.g. a cute heart or star).</p>
                     <img id="img3" src="./assets/5.jpg" alt="Step 3" class="w-full h-64 md:h-96 rounded-lg shadow-lg object-cover cursor-zoom-in zoomable" />
                 </div>
             </div>
@@ -95,16 +127,16 @@
         <section class="step" id="step4">
             <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-1/2">
-                    <h2 class="text-4xl font-semibold text-orange-600" id="title4">Step 4: Baking (finally)</h2>
-                    <p class="mt-4 text-lg text-gray-700">baking the rolled out dough.</p>
-                    <ul class="mt-6 text-gray-600 space-y-2">
+                    <h2 class="text-4xl font-semibold text-pink-600" id="title4">Step 4: Baking (finally)</h2>
+                    <p class="mt-4 text-lg text-purple-600">baking the rolled out dough.</p>
+                    <ul class="mt-6 text-purple-600 space-y-2">
                         <li>• preheat the oven to 245°C for about 10-15 minutes</li>
                         <li>• place the dough on a baking sheet suitable for baking</li>
                         <li>• ensure the baking sheet has a non stick surface or some oil/butter to prevent sticking </li>
                     </ul>
                 </div>
                 <div class="md:w-1/2 w-full">
-                    <p class="mb-4 text-sm text-gray-500 italic">tip: ensure your oven is fully preheated before placing the dough inside.</p>
+                    <p class="mb-4 text-sm text-purple-600 italic">tip: ensure your oven is fully preheated before placing the dough inside.</p>
                     <img id="img4" src="./assets/6.jpg" alt="Step 4" class="w-full h-64 md:h-96 rounded-lg shadow-lg object-cover cursor-zoom-in zoomable" />
                 </div>
             </div>
@@ -113,23 +145,80 @@
         <section class="step" id="step5">
             <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-1/2">
-                    <h2 class="text-4xl font-semibold text-orange-600" id="title5">Step 5: Adding your favorite toppings!</h2>
-                    <p class="mt-4 text-lg text-gray-700">Evenly distribute your desired toppings of choice.</p>
-                    <ul class="mt-6 text-gray-600 space-y-2">
+                    <h2 class="text-4xl font-semibold text-pink-600" id="title5">Step 5: Adding your favorite toppings!</h2>
+                    <p class="mt-4 text-lg text-purple-600">Evenly distribute your desired toppings of choice.</p>
+                    <ul class="mt-6 text-purple-600 space-y-2">
                         <li>• Spread an even and generous layer of sauce</li>
-                        <li>• Depending on your prefrence you may add various meats and vegetables (popular options include pepperoni, mushrooms, bell peppers, and olives)</li>
-                        <li>• CHEESE! (add your fav kind, infact you can combine various types)</li>
+                        <li>• Depending on your preference you may add various meats and vegetables (popular options include pepperoni, mushrooms, bell peppers, and olives)</li>
+                        <li>• CHEESE! (add your fav kind, even combine varieties)</li>
                     </ul>
                 </div>
                 <div class="md:w-1/2 w-full">
-                    <p class="mb-4 text-sm text-gray-500 italic">tip: you could even create your own new and unique flavors (experiment and creaye your own frankien pizza hehehee   ).</p>
+                    <p class="mb-4 text-sm text-purple-600 italic">tip: you could even create your own new flavor combos (experiment with toppings).</p>
                     <img id="img5" src="./assets/7.5.png" alt="Step 5" class="w-full h-64 md:h-96 rounded-lg shadow-lg object-cover cursor-zoom-in zoomable" />
                 </div>
             </div>
         </section>
-    </div>
 
-   
+        <section class="step" id="step6">
+            <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-semibold text-pink-600" id="title6">Step 6: Bake until light to medium golden</h2>
+                    <p class="mt-4 text-lg text-purple-600">Bake the pizza until the cheese is slighly charred and the crust has evenly cooked.</p>
+                    <ul class="mt-6 text-purple-600 space-y-2">
+                        <li>• bake on the middle rack for about 45 minutes</li>
+                        <li>• monitor the oven closely to ensure even and smooth cooking process</li>
+                        <li>• watch for the desired color or texture you're aiming for</li>
+                    
+                        <li>• rotate occassionally if required depending on various factors such as oven tempertaure and size etc</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 w-full">
+                    <p class="mb-4 text-sm text-purple-600 italic">tip: switching to broil for the last few minutes to achive that crispy and caramalised look of resturant qualiy pizza (feel free to skip if not desired).</p>
+                    <img id="img6" src="./assets/8.avif" alt="Step 6" class="w-full h-64 md:h-96 rounded-lg shadow-lg object-cover cursor-zoom-in zoomable" />
+                </div>
+            </div>
+        </section>
+
+        <section class="step" id="step7">
+            <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-semibold text-pink-600" id="title7">Step 7: Remove from oven</h2>
+                    <p class="mt-4 text-lg text-purple-600">Carefully remove the pizza from the scorching hot oven and place it on a cutting board or clean surface.</p>
+                    <ul class="mt-6 text-purple-600 space-y-2">
+                        <li>• remove the pizza carefully using oven mitts</li>
+                        <li>• let it cool for a couple of minutes (waiting is the hardest part!)</li>
+                        <li>• set a timer for the cooling period</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 w-full">
+                    <p class="mb-4 text-sm text-purple-600 italic">tip: slice the pizza right before serving for the best melt and texture.</p>
+                    <img id="img7" src="./assets/10.webp" alt="Step 7" class="w-full h-64 md:h-96 rounded-lg shadow-lg object-cover cursor-zoom-in zoomable" />
+                </div>
+            </div>
+        </section>
+
+        <section class="step" id="step8">
+            <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-semibold text-pink-600" id="title8">Step 8: Garnish, serve & enjoy!</h2>
+                    <p class="mt-4 text-lg text-purple-600">Slice the pizza into even pieces and prepare garnishes.</p>
+                    <ul class="mt-6 text-purple-600 space-y-2">
+                        <li>• preparee fresh herbs e.g basil  etc or you may opt for other toppings such as chili flakes or hot honey for that extra depth of flaour to truly elevate and enchnce the flaour profile! (Optional ofc)</li>
+                        <li>• plate it up (might as well take a picture after all that hard work ^^ )</li>
+                        <li>• serve hot and enjoy immediately (dont forget to share with your loved ones)</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 w-full">
+                    <p class="mb-4 text-sm text-purple-600 italic">tip: a quick drizzle of olive oil after baking adds a restaurant-quality finish.</p>
+                    <img id="img8" src="./assets/11.jpg" alt="Step 8" class="w-full h-64 md:h-96 rounded-lg shadow-lg object-cover cursor-zoom-in zoomable" />
+                </div>
+            </div>
+        </section>
+         <section class="step" id="step9">
+            <P class="text-2xl font-bold text-center text-purple-600">That's all folks! :p</P>
+        </section>
+    </div>
 
     <div class="progress-bar" id="progressBar"></div>
 
