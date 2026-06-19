@@ -52,19 +52,22 @@ document.addEventListener('click', (e) => {
   }, { once: true });
 });
 
-const audio= document.getElementbyId(bg-audio);
-const toggleBtn= document.getElementById('toggleAudio');
-togg;eBtn.textContent =  toggleBtn.addEventListener('click', () => {
-            if (audio.paused) {
-                audio.play()
-                    .then(() => {
-                        toggleBtn.textContent = '⏸️ Pause Music';
-                    })
-                    .catch(error => {
-                        console.error("Playback failed:", error);
-                    });
-            } else {
-                audio.pause();
-                toggleBtn.textContent = '🎵 Play Music';
-            }
-        });
+const audio = document.getElementById('bg-audio');
+const toggleBtn = document.getElementById('toggleAudio');
+
+toggleBtn.textContent = '🎵 Play Music';
+
+toggleBtn.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play()
+      .then(() => {
+        toggleBtn.textContent = '⏸️ Pause Music';
+      })
+      .catch(error => {
+        console.error("Playback failed:", error);
+      });
+  } else {
+    audio.pause();
+    toggleBtn.textContent = '🎵 Play Music';
+  }
+});

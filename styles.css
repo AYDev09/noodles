@@ -13,8 +13,8 @@
    padding: 10px 20px;
    background-color: #333;
    color: #fff;
-   border; none;
+   border: none;
    border-radius: 5px;
-   cursor: pointer:
-   z-index 1000;
+   cursor: pointer;
+   z-index: 1000;
 }
